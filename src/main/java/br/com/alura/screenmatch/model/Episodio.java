@@ -1,7 +1,6 @@
 package br.com.alura.screenmatch.model;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.ManyToAny;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
@@ -19,6 +18,8 @@ public class Episodio {
     private LocalDate dataLancamento;
     @ManyToOne
     private Serie serie;
+
+    public Episodio(){} //Construtor padrão para o JPA
 
     public Episodio(Integer numeroTemporada, DadosEpisodio dadosEpisodio) {
         this.temporada = numeroTemporada;
