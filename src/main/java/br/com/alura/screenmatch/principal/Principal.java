@@ -28,6 +28,10 @@ public class Principal {
         this.repositorio = repositorio;
     }
 
+    public Principal() {
+
+    }
+
     public void exibeMenu() {
         var opcao = -1;
         while(opcao != 0) {
